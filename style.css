@@ -1,0 +1,43 @@
+div.attachment.image a.imgsearch {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    margin: 8px;
+    width: 32px;
+    height: 32px;
+    line-height: 1.8em;
+    background-color: var(--btn);
+    border-radius: var(--btnRadius);
+    color: var(--btnText);
+    text-align: center;
+}
+
+div.attachment.image:hover a.imgsearch {
+    opacity:0.5;
+}
+
+div.attachment.image a.imgsearch:hover {
+    box-shadow: var(--buttonHoverShadow);
+    opacity:1;
+}
+
+div.attachment.image a.imgsearch:active {
+    box-shadow: var(--buttonPressedShadow);
+}
+
+div.attachment.image a.imgsearch .fa-old-padding.svg-inline--fa {
+    padding: .5em .3em;
+    color: var(--btnText);
+}
+
+@media (hover: none) {
+    div.attachment.image a.imgsearch {
+        opacity: 0.8;
+    }
+}
+
+@media (hover: hover) {
+    div.attachment.image a.imgsearch {
+        opacity: 0;
+    }
+}
